@@ -97,7 +97,8 @@ function initNavigation() {
             
             if (targetSection) {
                 const navHeight = navbar.offsetHeight;
-                const offsetTop = targetSection.offsetTop - navHeight - 20;
+                // Fixed offset calculation - reduced offset to prevent over-scrolling
+                const offsetTop = targetSection.offsetTop - navHeight - 80;
                 
                 window.scrollTo({
                     top: offsetTop,
@@ -863,7 +864,7 @@ function initSmoothScrolling() {
             const target = document.querySelector(this.getAttribute('href'));
             if (target) {
                 const navHeight = document.querySelector('.navbar').offsetHeight;
-                const targetPosition = target.offsetTop - navHeight - 20;
+                const targetPosition = target.offsetTop - navHeight - 80;
                 
                 // Custom smooth scroll with easing
                 smoothScrollTo(targetPosition, 1000);
