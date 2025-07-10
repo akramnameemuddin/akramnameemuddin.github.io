@@ -98,7 +98,7 @@ function initNavigation() {
             if (targetSection) {
                 const navHeight = navbar.offsetHeight;
                 // Fixed offset calculation - reduced offset to prevent over-scrolling
-                const offsetTop = targetSection.offsetTop - navHeight - 80;
+                const offsetTop = targetSection.offsetTop - navHeight - 20;
                 
                 window.scrollTo({
                     top: offsetTop,
@@ -117,8 +117,8 @@ function initNavigation() {
     
     // Enhanced active link highlighting with intersection observer
     const observerOptions = {
-        threshold: 0.3,
-        rootMargin: '-80px 0px -70% 0px'
+        threshold: 0.2,
+        rootMargin: '-100px 0px -60% 0px'
     };
     
     const navObserver = new IntersectionObserver((entries) => {
