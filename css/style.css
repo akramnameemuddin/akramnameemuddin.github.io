@@ -724,19 +724,19 @@ body::after {
 /* Enhanced Section Headers */
 .section-header {
     text-align: center;
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.5rem;
     position: relative;
 }
 
 .section-title {
     font-family: var(--font-display);
-    font-size: clamp(2rem, 4vw, 3.5rem);
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
     font-weight: 700;
     background: linear-gradient(135deg, var(--accent-color), var(--primary-color));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    margin-bottom: 0.8rem;
+    margin-bottom: 0.5rem;
     position: relative;
 }
 
@@ -763,9 +763,9 @@ body::after {
 .about-content {
     display: grid;
     grid-template-columns: 1fr 1.5fr;
-    gap: 4rem;
+    gap: 2rem;
     align-items: center;
-    padding: 1rem 0;
+    padding: 0.5rem 0;
 }
 
 .profile-section {
@@ -776,8 +776,8 @@ body::after {
 
 .profile-image {
     position: relative;
-    width: 280px;
-    height: 280px;
+    width: 220px;
+    height: 220px;
 }
 
 .profile-image img {
@@ -832,15 +832,15 @@ body::after {
 }
 
 .about-intro {
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: var(--text-secondary);
-    margin-bottom: 3rem;
-    line-height: 1.8;
+    margin-bottom: 2rem;
+    line-height: 1.6;
     font-weight: 400;
 }
 
 .intro-highlight {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 700;
     color: var(--accent-color);
     text-shadow: 0 0 20px var(--glow-accent);
@@ -853,14 +853,14 @@ body::after {
 .personality-traits {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1rem;
 }
 
 .trait {
     display: flex;
     align-items: center;
-    gap: 1.5rem;
-    padding: 1.5rem;
+    gap: 1rem;
+    padding: 1rem;
     background: var(--background-glass);
     backdrop-filter: blur(var(--blur-md));
     -webkit-backdrop-filter: blur(var(--blur-md));
@@ -908,9 +908,9 @@ body::after {
 /* Enhanced Skills Section */
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 2rem;
-    padding: 1rem 0;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    padding: 0.5rem 0;
 }
 
 .skill-category {
@@ -919,7 +919,7 @@ body::after {
     -webkit-backdrop-filter: blur(var(--blur-md));
     border: 1px solid var(--border-color);
     border-radius: var(--border-radius-lg);
-    padding: 2rem;
+    padding: 1.5rem;
     transition: all var(--transition-normal) var(--ease-out-cubic);
     position: relative;
     overflow: hidden;
@@ -972,14 +972,14 @@ body::after {
 .skills-row {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1rem;
 }
 
 .skill-item {
     display: flex;
     align-items: center;
     gap: 1.5rem;
-    padding: 1.5rem;
+    padding: 1rem;
     background: rgba(255, 255, 255, 0.02);
     border: 1px solid rgba(255, 255, 255, 0.05);
     border-radius: var(--border-radius-md);
@@ -1189,52 +1189,54 @@ body::after {
 }
 
 .project-info {
-    padding: 2.5rem;
+    padding: 1.5rem;
     position: relative;
     z-index: 2;
 }
 
 .project-info h3 {
     font-family: var(--font-display);
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     font-weight: 700;
-    margin-bottom: 1rem;
+    margin-bottom: 0.3rem;
     color: var(--text-primary);
-    text-transform: uppercase;
-    letter-spacing: 0.02em;
 }
 
 .project-info p {
-    color: var(--text-secondary);
-    margin-bottom: 2rem;
-    line-height: 1.7;
-    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
 }
 
-.project-tech {
-    display: flex;
-    gap: 0.8rem;
-    flex-wrap: wrap;
+.experience-details {
+    margin: 1rem 0;
 }
 
-.project-tech span {
-    padding: 0.5rem 1rem;
-    background: rgba(0, 245, 212, 0.1);
-    border: 1px solid rgba(0, 245, 212, 0.3);
-    border-radius: var(--border-radius-lg);
+.experience-details ul {
+    margin: 0.5rem 0;
+    padding-left: 1.2rem;
+}
+
+.experience-details ul li {
+    margin-bottom: 0.4rem;
     font-size: 0.85rem;
-    font-weight: 600;
-    color: var(--accent-color);
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    transition: all var(--transition-normal) ease;
+    line-height: 1.4;
 }
 
-.project-tech span:hover {
-    background: rgba(0, 245, 212, 0.2);
-    border-color: var(--accent-color);
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(0, 245, 212, 0.3);
+.project-description {
+    margin: 0.5rem 0;
+    font-size: 0.8rem;
+    line-height: 1.4;
+}
+
+.project-description ul {
+    margin: 0.3rem 0;
+    padding-left: 0.8rem;
+}
+
+.project-description ul li {
+    margin-bottom: 0.3rem;
+    font-size: 0.75rem;
+    line-height: 1.3;
 }
 
 /* Enhanced Timeline (Experience) */
@@ -1242,7 +1244,7 @@ body::after {
     position: relative;
     max-width: 900px;
     margin: 0 auto;
-    padding: 2rem 0;
+    padding: 1rem 0;
 }
 
 .timeline::before {
@@ -1296,7 +1298,7 @@ body::after {
 
 .timeline-content {
     flex: 1;
-    padding: 2.5rem;
+    padding: 1.5rem;
     background: var(--background-glass);
     backdrop-filter: blur(var(--blur-lg));
     -webkit-backdrop-filter: blur(var(--blur-lg));
@@ -1332,31 +1334,31 @@ body::after {
 .timeline-date {
     color: var(--accent-color);
     font-weight: 700;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     text-transform: uppercase;
     letter-spacing: 1px;
-    margin-bottom: 0.8rem;
+    margin-bottom: 0.5rem;
     font-family: var(--font-mono);
 }
 
 .timeline-content h3 {
     font-family: var(--font-display);
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 700;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.3rem;
     color: var(--text-primary);
 }
 
 .timeline-content h4 {
     color: var(--text-secondary);
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     font-weight: 600;
-    font-size: 1.1rem;
+    font-size: 0.95rem;
 }
 
 .timeline-content p {
-    line-height: 1.8;
-    color: var(--text-secondary);
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
 }
 
 /* Timeline connector arrows */
@@ -1384,16 +1386,16 @@ body::after {
 /* Enhanced Certifications Section */
 .certifications-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 2.5rem;
-    padding: 2rem 0;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem 0;
 }
 
 .certification-badge {
     display: flex;
     align-items: center;
-    gap: 2rem;
-    padding: 2.5rem;
+    gap: 1.5rem;
+    padding: 1.5rem;
     background: var(--background-glass);
     backdrop-filter: blur(var(--blur-lg));
     -webkit-backdrop-filter: blur(var(--blur-lg));
@@ -1458,9 +1460,9 @@ body::after {
 
 .cert-info h3 {
     font-family: var(--font-display);
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     font-weight: 700;
-    margin-bottom: 0.8rem;
+    margin-bottom: 0.5rem;
     color: var(--text-primary);
     text-transform: uppercase;
     letter-spacing: 0.02em;
@@ -1468,14 +1470,15 @@ body::after {
 
 .cert-info p {
     color: var(--text-secondary);
-    margin-bottom: 1rem;
+    margin-bottom: 0.6rem;
     font-weight: 500;
+    font-size: 0.9rem;
 }
 
 .cert-date {
     color: var(--accent-color);
     font-weight: 700;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     text-transform: uppercase;
     letter-spacing: 0.5px;
     font-family: var(--font-mono);
@@ -1966,9 +1969,9 @@ body::after {
 .card-content {
     width: 100%;
     max-width: var(--container-max-width);
-    height: calc(100vh - 5rem);
-    max-height: calc(100vh - 5rem);
-    min-height: calc(100vh - 5rem);
+    height: calc(100vh - 3rem);
+    max-height: calc(100vh - 3rem);
+    min-height: calc(100vh - 3rem);
     background: 
         linear-gradient(135deg, rgba(0, 245, 212, 0.08) 0%, transparent 30%),
         linear-gradient(225deg, rgba(59, 130, 246, 0.05) 0%, transparent 40%),
@@ -1981,9 +1984,9 @@ body::after {
     -webkit-backdrop-filter: blur(25px);
     border: 1px solid rgba(255, 255, 255, 0.15);
     border-radius: var(--border-radius-lg);
-    padding: 2.5rem 2rem;
+    padding: 1.5rem;
     position: relative;
-    overflow-y: auto;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     transition: all var(--transition-slow) var(--ease-out-expo);
@@ -2234,217 +2237,6 @@ html {
     
     .social-links {
         justify-content: center;
-    }
-}
-
-@media (max-width: 480px) {
-    .card-section {
-        padding: 0.5rem;
-    }
-    
-    .card-content {
-        padding: 1.5rem 1rem;
-        height: calc(100vh - 2rem) !important;
-        max-height: calc(100vh - 2rem) !important;
-        min-height: calc(100vh - 2rem) !important;
-    }
-    
-    .section-title {
-        font-size: clamp(1.5rem, 6vw, 2rem);
-    }
-    
-    .profile-image {
-        width: 220px;
-        height: 220px;
-    }
-    
-    .skill-item {
-        padding: 1rem;
-        gap: 1rem;
-    }
-    
-    .skill-item i {
-        font-size: 2rem;
-    }
-    
-    .trait {
-        padding: 0.8rem;
-        gap: 0.8rem;
-        flex-direction: column;
-        text-align: center;
-    }
-    
-    .timeline-content {
-        padding: 1.5rem;
-    }
-}
-
-/* High DPI / Retina Display Optimizations */
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-    .hero-title .line:nth-child(3)::after {
-        filter: blur(10px);
-    }
-    
-    .profile-ring::before {
-        filter: blur(4px);
-    }
-}
-
-/* Print Styles */
-@media print {
-    .navbar,
-    .scroll-progress,
-    .scroll-indicator,
-    .hamburger {
-        display: none;
-    }
-    
-    .card-section {
-        position: static;
-        height: auto;
-        page-break-inside: avoid;
-    }
-    
-    .card-content {
-        background: white;
-        color: black;
-        box-shadow: none;
-        border: 1px solid #ccc;
-    }
-}
-
-/* Dark mode preference override */
-@media (prefers-color-scheme: light) {
-    /* Keep dark theme - this is intentional for the portfolio design */
-}
-
-/* Reduced motion preferences */
-@media (prefers-reduced-motion: reduce) {
-    *,
-    *::before,
-    *::after {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-    }
-    
-    .scroll-progress {
-        transition: none;
-    }
-    
-    html {
-        scroll-behavior: auto;
-    }
-}
-
-/* Focus styles for accessibility */
-.btn:focus,
-.nav-link:focus,
-.social-link:focus,
-.project-link:focus {
-    outline: 3px solid var(--accent-color);
-    outline-offset: 2px;
-}
-
-.form-group input:focus,
-.form-group textarea:focus {
-    outline: 3px solid var(--accent-color);
-    outline-offset: 2px;
-}
-
-/* Fallback for JavaScript-initialized card visibility */
-.card-section {
-    opacity: 1 !important;
-    transform: translateY(0) !important;
-}
-
-.card-section .card-content {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-/* Enhanced Responsive Design for Cards */
-@media (max-width: 1024px) {
-    .card-content {
-        padding: 2.5rem 2rem;
-        height: calc(100vh - 6rem) !important;
-        max-height: calc(100vh - 6rem) !important;
-        min-height: calc(100vh - 6rem) !important;
-    }
-    
-    .section-title {
-        font-size: clamp(2rem, 4vw, 3rem);
-    }
-    
-    .about-content {
-        grid-template-columns: 1fr;
-        gap: 3rem;
-        text-align: center;
-    }
-    
-    .profile-image {
-        width: 280px;
-        height: 280px;
-    }
-    
-    .skills-grid {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
-    
-    .projects-slider {
-        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-        gap: 2rem;
-    }
-}
-
-@media (max-width: 768px) {
-    .card-section {
-        padding: 1rem;
-    }
-    
-    .card-content {
-        padding: 2rem 1.5rem;
-        height: calc(100vh - 4rem) !important;
-        max-height: calc(100vh - 4rem) !important;
-        min-height: calc(100vh - 4rem) !important;
-        border-radius: var(--border-radius-md);
-    }
-    
-    .section-header {
-        margin-bottom: 2.5rem;
-    }
-    
-    .section-title {
-        font-size: clamp(1.8rem, 5vw, 2.5rem);
-        margin-bottom: 0.5rem;
-    }
-    
-    .projects-slider {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-    }
-    
-    .skills-grid {
-        gap: 1.5rem;
-    }
-    
-    .skill-category {
-        padding: 2rem 1.5rem;
-    }
-    
-    .personality-traits {
-        gap: 1rem;
-    }
-    
-    .trait {
-        padding: 1rem;
-        gap: 1rem;
-    }
-    
-    .contact-content {
-        grid-template-columns: 1fr;
-        gap: 2rem;
     }
 }
 
