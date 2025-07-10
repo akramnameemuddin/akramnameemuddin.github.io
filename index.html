@@ -1,1 +1,453 @@
- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akram Naeemuddin - Software Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span>AN</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#hero" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress"></div>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="line">Crafting</span>
+                    <span class="line">Impactful</span>
+                    <span class="line gradient-text">Code</span>
+                </h1>
+                <p class="hero-description">
+                    Full-stack developer passionate about creating scalable solutions 
+                    and seamless user experiences with modern technologies.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>View Projects</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <span>Get In Touch</span>
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-elements">
+                    <div class="floating-card">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <div class="floating-card">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <div class="floating-card">
+                        <i class="fab fa-js-square"></i>
+                    </div>
+                    <div class="floating-card">
+                        <i class="fas fa-database"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Stacking Cards Container -->
+    <div class="cards-container">
+        
+        <!-- About Me Card -->
+        <section id="about" class="card-section" data-card="1">
+            <div class="card-content">
+                <div class="section-header">
+                    <h2 class="section-title">About Me</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="about-content">
+                    <div class="profile-section">
+                        <div class="profile-image">
+                            <img src="images/profile.jpg" alt="Akram Naeemuddin" />
+                            <div class="profile-ring"></div>
+                        </div>
+                    </div>
+                    <div class="about-text">
+                        <p class="about-intro">
+                            Hi! I'm Akram Naeemuddin, a passionate software developer with expertise in 
+                            full-stack development. I love turning complex problems into simple, 
+                            beautiful solutions through clean and efficient code.
+                        </p>
+                        <div class="personality-traits">
+                            <div class="trait">
+                                <i class="fas fa-lightbulb"></i>
+                                <span>Creative Problem Solver</span>
+                            </div>
+                            <div class="trait">
+                                <i class="fas fa-users"></i>
+                                <span>Team Collaborator</span>
+                            </div>
+                            <div class="trait">
+                                <i class="fas fa-rocket"></i>
+                                <span>Innovation Enthusiast</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Card -->
+        <section id="skills" class="card-section" data-card="2">
+            <div class="card-content">
+                <div class="section-header">
+                    <h2 class="section-title">Skills & Technologies</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Languages</h3>
+                        <div class="skills-row">
+                            <div class="skill-item">
+                                <i class="fab fa-python"></i>
+                                <span>Python</span>
+                                <div class="skill-level" data-level="90"></div>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-js-square"></i>
+                                <span>JavaScript</span>
+                                <div class="skill-level" data-level="85"></div>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-html5"></i>
+                                <span>HTML/CSS</span>
+                                <div class="skill-level" data-level="95"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Frameworks</h3>
+                        <div class="skills-row">
+                            <div class="skill-item">
+                                <i class="fab fa-django"></i>
+                                <span>Django</span>
+                                <div class="skill-level" data-level="88"></div>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-react"></i>
+                                <span>React</span>
+                                <div class="skill-level" data-level="82"></div>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-node-js"></i>
+                                <span>Node.js</span>
+                                <div class="skill-level" data-level="78"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Tools & Database</h3>
+                        <div class="skills-row">
+                            <div class="skill-item">
+                                <i class="fas fa-database"></i>
+                                <span>MySQL</span>
+                                <div class="skill-level" data-level="85"></div>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-git-alt"></i>
+                                <span>Git</span>
+                                <div class="skill-level" data-level="90"></div>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-docker"></i>
+                                <span>Docker</span>
+                                <div class="skill-level" data-level="75"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Card -->
+        <section id="projects" class="card-section" data-card="3">
+            <div class="card-content">
+                <div class="section-header">
+                    <h2 class="section-title">Featured Projects</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="projects-slider">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/project1.jpg" alt="E-commerce Platform" />
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="#" class="project-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>E-commerce Platform</h3>
+                            <p>Full-stack e-commerce solution built with Django and React</p>
+                            <div class="project-tech">
+                                <span>Django</span>
+                                <span>React</span>
+                                <span>PostgreSQL</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/project2.jpg" alt="Task Management App" />
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="#" class="project-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Task Management App</h3>
+                            <p>Collaborative task management tool with real-time updates</p>
+                            <div class="project-tech">
+                                <span>Node.js</span>
+                                <span>React</span>
+                                <span>Socket.io</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/project3.jpg" alt="Data Visualization Dashboard" />
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="#" class="project-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Data Visualization Dashboard</h3>
+                            <p>Interactive dashboard for business analytics and insights</p>
+                            <div class="project-tech">
+                                <span>Python</span>
+                                <span>D3.js</span>
+                                <span>Flask</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Card -->
+        <section id="experience" class="card-section" data-card="4">
+            <div class="card-content">
+                <div class="section-header">
+                    <h2 class="section-title">Experience</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2023 - Present</div>
+                            <h3>Senior Software Developer</h3>
+                            <h4>Tech Solutions Inc.</h4>
+                            <p>Leading full-stack development projects, mentoring junior developers, and implementing scalable solutions using Django and React.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2021 - 2023</div>
+                            <h3>Full Stack Developer</h3>
+                            <h4>Digital Innovations Ltd.</h4>
+                            <p>Developed and maintained web applications, collaborated with cross-functional teams, and optimized database performance.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2019 - 2021</div>
+                            <h3>Junior Developer</h3>
+                            <h4>StartUp Ventures</h4>
+                            <p>Started career in web development, learned modern frameworks, and contributed to various client projects.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Card -->
+        <section id="certifications" class="card-section" data-card="5">
+            <div class="card-content">
+                <div class="section-header">
+                    <h2 class="section-title">Certifications</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="certifications-grid">
+                    <div class="certification-badge">
+                        <div class="cert-icon">
+                            <img src="images/coursera-logo.png" alt="Coursera" />
+                        </div>
+                        <div class="cert-info">
+                            <h3>Full Stack Web Development</h3>
+                            <p>Coursera - Meta</p>
+                            <span class="cert-date">2023</span>
+                        </div>
+                    </div>
+                    <div class="certification-badge">
+                        <div class="cert-icon">
+                            <img src="images/udemy-logo.png" alt="Udemy" />
+                        </div>
+                        <div class="cert-info">
+                            <h3>Advanced React Development</h3>
+                            <p>Udemy</p>
+                            <span class="cert-date">2022</span>
+                        </div>
+                    </div>
+                    <div class="certification-badge">
+                        <div class="cert-icon">
+                            <img src="images/aws-logo.png" alt="AWS" />
+                        </div>
+                        <div class="cert-info">
+                            <h3>AWS Cloud Practitioner</h3>
+                            <p>Amazon Web Services</p>
+                            <span class="cert-date">2022</span>
+                        </div>
+                    </div>
+                    <div class="certification-badge">
+                        <div class="cert-icon">
+                            <img src="images/google-logo.png" alt="Google" />
+                        </div>
+                        <div class="cert-info">
+                            <h3>Python for Data Science</h3>
+                            <p>Google Cloud</p>
+                            <span class="cert-date">2021</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Card -->
+        <section id="contact" class="card-section" data-card="6">
+            <div class="card-content">
+                <div class="section-header">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Let's Build Something Amazing Together</h3>
+                        <p>I'm always interested in new opportunities and exciting projects. Feel free to reach out!</p>
+                        <div class="contact-items">
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <span>akram@naeemuddin.me</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Your Location</span>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <a href="#" class="social-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required>
+                            <label for="name">Your Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">Your Email</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" required>
+                            <label for="subject">Subject</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" required></textarea>
+                            <label for="message">Your Message</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Akram Naeemuddin. All rights reserved.</p>
+            <p>Crafted with <i class="fas fa-heart"></i> and lots of coffee</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+

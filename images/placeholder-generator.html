@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Placeholder Image Generator</title>
+</head>
+<body>
+    <h1>Placeholder Images for Portfolio</h1>
+    <p>Since we can't create actual image files, here are the recommended image specifications:</p>
+    
+    <h2>Required Images:</h2>
+    <ul>
+        <li><strong>profile.jpg</strong> - 400x400px circular profile photo</li>
+        <li><strong>project1.jpg</strong> - 600x400px screenshot of e-commerce platform</li>
+        <li><strong>project2.jpg</strong> - 600x400px screenshot of task management app</li>
+        <li><strong>project3.jpg</strong> - 600x400px screenshot of data visualization dashboard</li>
+        <li><strong>coursera-logo.png</strong> - 80x80px Coursera logo</li>
+        <li><strong>udemy-logo.png</strong> - 80x80px Udemy logo</li>
+        <li><strong>aws-logo.png</strong> - 80x80px AWS logo</li>
+        <li><strong>google-logo.png</strong> - 80x80px Google logo</li>
+    </ul>
+    
+    <h2>Placeholder SVG Images:</h2>
+    <p>You can use these base64 encoded SVG placeholders or replace with actual images:</p>
+    
+    <script>
+        // Generate placeholder images
+        function createPlaceholder(width, height, text, color = '#6366f1') {
+            return `data:image/svg+xml;base64,${btoa(`
+                <svg width="${width}" height="${height}" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="100%" height="100%" fill="${color}"/>
+                    <text x="50%" y="50%" font-family="Arial" font-size="16" fill="white" text-anchor="middle" dy=".3em">${text}</text>
+                </svg>
+            `)}`;
+        }
+        
+        console.log('Profile placeholder:', createPlaceholder(400, 400, 'Profile Photo', '#8b5cf6'));
+        console.log('Project 1 placeholder:', createPlaceholder(600, 400, 'E-commerce Platform', '#06b6d4'));
+        console.log('Project 2 placeholder:', createPlaceholder(600, 400, 'Task Management', '#10b981'));
+        console.log('Project 3 placeholder:', createPlaceholder(600, 400, 'Data Dashboard', '#f59e0b'));
+    </script>
+</body>
+</html>
