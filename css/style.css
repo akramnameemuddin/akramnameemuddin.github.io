@@ -790,13 +790,27 @@ body::after {
         0 20px 60px rgba(0, 245, 212, 0.3),
         inset 0 0 0 4px rgba(255, 255, 255, 0.1);
     transition: all var(--transition-normal) var(--ease-out-cubic);
+    display: block;
+    z-index: 2;
+    position: relative;
+    background-color: var(--background-card);
+    min-width: 220px;
+    min-height: 220px;
 }
 
-.profile-image:hover img {
-    transform: scale(1.05);
-    box-shadow: 
-        0 30px 80px rgba(0, 245, 212, 0.4),
-        inset 0 0 0 4px rgba(255, 255, 255, 0.2);
+/* Ensure profile image loads properly */
+.profile-image {
+    position: relative;
+    width: 220px;
+    height: 220px;
+}
+
+/* Fallback for image loading issues */
+.profile-image img[src=""],
+.profile-image img:not([src]),
+.profile-image img[src*="placeholder"] {
+    background: linear-gradient(135deg, var(--accent-color), var(--primary-color));
+    opacity: 0.3;
 }
 
 .profile-ring {
@@ -811,6 +825,8 @@ body::after {
         linear-gradient(var(--background-dark), var(--background-dark)) padding-box,
         linear-gradient(45deg, var(--accent-color), var(--primary-color), var(--secondary-color)) border-box;
     animation: rotateRing 6s linear infinite;
+    z-index: 1;
+    pointer-events: none;
 }
 
 .profile-ring::before {
