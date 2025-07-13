@@ -11,7 +11,6 @@ document.addEventListener('DOMContentLoaded', function() {
     initScrollEffects();
     initAdvancedCardStacking();
     initSkillAnimations();
-    initContactForm();
     initScrollIndicator();
     initParallaxEffects();
     initTypewriterEffect();
