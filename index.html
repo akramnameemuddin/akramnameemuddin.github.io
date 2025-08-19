@@ -3,443 +3,419 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Akram Naeemuddin</title>
+    <title>Akram Naeemuddin - Full-Stack Developer</title>
+    <meta name="description" content="Full-Stack Developer & Data Enthusiast crafting end-to-end solutions with Python, React, SQL, and Machine Learning.">
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="nav">
         <div class="nav-container">
-            <div class="nav-logo">
+            <a href="#" class="nav-logo">
                 <span>Akram Naeemuddin</span>
-            </div>
+            </a>
             <ul class="nav-menu">
-                <li><a href="#hero" class="nav-link">Home</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
                 <li><a href="#projects" class="nav-link">Projects</a></li>
                 <li><a href="#experience" class="nav-link">Experience</a></li>
-                <li><a href="#certifications" class="nav-link">Certifications</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#resume" class="nav-link nav-resume">Resume</a></li>
             </ul>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </nav>
 
-    <!-- Scroll Progress Bar -->
-    <div class="scroll-progress"></div>
-
     <!-- Hero Section -->
-    <section id="hero" class="hero-section">
-        <div class="hero-content">
-            <div class="hero-text">
-                <h1 class="hero-title">
-                    <span class="line">Crafting</span>
-                    <span class="line">Impactful</span>
-                    <span class="line gradient-text">Code</span>
-                </h1>
-                <p class="hero-description">
-                    Full-Stack Developer & Data Enthusiast — Crafting end-to-end solutions powered by Python, React, SQL, and Machine Learning.
-                </p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">
-                        <span>View Projects</span>
-                        <i class="fas fa-arrow-right"></i>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title animate-fade-up">
+                        Hi, I'm <span class="text-accent">Akram Naeemuddin</span>
+                    </h1>
+                    <h2 class="hero-subtitle animate-fade-up" style="animation-delay: 0.2s;">
+                        I build exceptional digital experiences.
+                    </h2>
+                    <p class="hero-description animate-fade-up" style="animation-delay: 0.4s;">
+                        I'm a full-stack developer and data enthusiast specializing in building
+                        intelligent web applications with <span class="text-highlight">Python</span>,
+                        <span class="text-highlight">React</span>, and <span class="text-highlight">Machine Learning</span>.
+                        Currently focused on creating impactful solutions that bridge data and development.
+                    </p>
+                    <div class="hero-actions animate-fade-up" style="animation-delay: 0.6s;">
+                        <a href="#projects" class="btn btn-primary animate-glow">
+                            View My Work
+                        </a>
+                        <a href="mailto:akramnaeemuddin09@gmail.com" class="btn btn-outline">
+                            Get In Touch
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-number">01.</span>
+                    <h2 class="section-title">About Me</h2>
+                </div>
+                <div class="about-content">
+                    <div class="about-text animate-fade-left">
+                        <p>
+                            Hello! I'm Akram, a passionate full-stack developer with a strong foundation in
+                            data science and machine learning. My journey in technology began with data analysis,
+                            where I discovered the power of turning raw data into actionable insights.
+                        </p>
+                        <p>
+                            I specialize in building modern web applications that seamlessly integrate
+                            data-driven features with intuitive user experiences. My expertise spans across
+                            the full development stack, from designing efficient database schemas to crafting
+                            responsive frontend interfaces.
+                        </p>
+                        <p>
+                            Currently, I'm focused on developing intelligent platforms that leverage machine
+                            learning to solve real-world problems. I enjoy working at the intersection of
+                            data science and web development, creating solutions that are both technically
+                            robust and user-friendly.
+                        </p>
+                        <p>Here are a few technologies I've been working with recently:</p>
+                        <ul class="tech-list">
+                            <li>Python & Django</li>
+                            <li>JavaScript & React</li>
+                            <li>PostgreSQL & SQL</li>
+                            <li>Machine Learning</li>
+                            <li>AWS & Cloud Services</li>
+                            <li>REST APIs</li>
+                        </ul>
+                    </div>
+                    <div class="about-image animate-fade-right">
+                        <div class="image-wrapper animate-float">
+                            <img src="./images/1727023493260.jpg" alt="Akram Naeemuddin" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-number">02.</span>
+                    <h2 class="section-title">Where I've Worked</h2>
+                </div>
+                <div class="experience-content">
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <h3 class="experience-title">
+                                Data Quality Intern
+                                <span class="experience-company">@ Saras Analytics</span>
+                            </h3>
+                            <p class="experience-date">August 2022 — January 2023</p>
+                        </div>
+                        <div class="experience-details">
+                            <ul>
+                                <li>Built and optimized custom SQL queries to generate actionable reports for leading e-commerce and apparel brands</li>
+                                <li>Analyzed Google Analytics data to create tailored dashboards supporting marketing strategies</li>
+                                <li>Delivered data-driven growth insights that contributed to measurable revenue gains for high-growth clients</li>
+                                <li>Automated repetitive workflows using Excel macros and VBA scripts, achieving a 30% reduction in manual workload</li>
+                                <li>Improved data processing accuracy and speed, helping teams make faster and more confident decisions</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-number">03.</span>
+                    <h2 class="section-title">Some Things I've Built</h2>
+                </div>
+                <div class="projects-grid">
+                    <!-- Featured Project -->
+                    <div class="project featured-project">
+                        <div class="project-content">
+                            <div class="project-overline">Featured Project</div>
+                            <h3 class="project-title">
+                                <a href="https://jobelevates.akramnaeemuddin.me/" target="_blank">
+                                    Smart Competency Platform
+                                </a>
+                            </h3>
+                            <div class="project-description">
+                                <p>
+                                    An AI-powered employment platform that bridges the gap between candidates' skills
+                                    and job market demands. Features include ML-based competency assessment, intelligent
+                                    job matching, adaptive learning paths, and automated resume generation.
+                                </p>
+                            </div>
+                            <ul class="project-tech-list">
+                                <li>Python</li>
+                                <li>Django</li>
+                                <li>React</li>
+                                <li>PostgreSQL</li>
+                                <li>AWS</li>
+                                <li>Machine Learning</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="https://github.com/akramnameemuddin/job-elevate" target="_blank" aria-label="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://jobelevates.akramnaeemuddin.me/" target="_blank" aria-label="External Link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-image">
+                            <a href="https://jobelevates.akramnaeemuddin.me/" target="_blank">
+                                <img src="images/project1.png" alt="Smart Competency Platform" />
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Other Notable Projects -->
+                    <div class="other-projects">
+                        <h3 class="other-projects-title">Other Noteworthy Projects</h3>
+                        <div class="projects-grid-small">
+                            <div class="project-card">
+                                <div class="project-card-header">
+                                    <div class="folder-icon">
+                                        <i class="fas fa-folder"></i>
+                                    </div>
+                                    <div class="project-card-links">
+                                        <a href="https://github.com/akramnameemuddin/File_comp_mgmt" target="_blank" aria-label="GitHub">
+                                            <i class="fab fa-github"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <h4 class="project-card-title">File Complaint Management System</h4>
+                                <p class="project-card-description">
+                                    A comprehensive platform where villagers can file complaints and administrators
+                                    can manage and resolve them based on severity levels. Features role-based access
+                                    control and priority-based complaint handling.
+                                </p>
+                                <ul class="project-card-tech">
+                                    <li>Python</li>
+                                    <li>Django</li>
+                                    <li>SQLite</li>
+                                    <li>HTML/CSS</li>
+                                    <li>JavaScript</li>
+                                </ul>
+                            </div>
+
+                            <div class="project-card">
+                                <div class="project-card-header">
+                                    <div class="folder-icon">
+                                        <i class="fas fa-folder"></i>
+                                    </div>
+                                    <div class="project-card-links">
+                                        <a href="https://github.com/akramnameemuddin/Resume_Screening" target="_blank" aria-label="GitHub">
+                                            <i class="fab fa-github"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <h4 class="project-card-title">Resume Screening System</h4>
+                                <p class="project-card-description">
+                                    An intelligent system that matches resumes to appropriate job descriptions using
+                                    natural language processing and machine learning algorithms. Automates the initial
+                                    screening process for HR departments.
+                                </p>
+                                <ul class="project-card-tech">
+                                    <li>Python</li>
+                                    <li>NLP</li>
+                                    <li>Scikit-learn</li>
+                                    <li>Pandas</li>
+                                    <li>Flask</li>
+                                </ul>
+                            </div>
+
+                            <div class="project-card">
+                                <div class="project-card-header">
+                                    <div class="folder-icon">
+                                        <i class="fas fa-folder"></i>
+                                    </div>
+                                    <div class="project-card-links">
+                                        <a href="https://github.com/akramnameemuddin/Churn_prediction" target="_blank" aria-label="GitHub">
+                                            <i class="fab fa-github"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <h4 class="project-card-title">Customer Churn Prediction</h4>
+                                <p class="project-card-description">
+                                    A machine learning model that predicts customer churn probability using historical
+                                    data and behavioral patterns. Helps businesses identify at-risk customers and
+                                    implement retention strategies proactively.
+                                </p>
+                                <ul class="project-card-tech">
+                                    <li>Python</li>
+                                    <li>Machine Learning</li>
+                                    <li>Pandas</li>
+                                    <li>Matplotlib</li>
+                                    <li>Seaborn</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resume Section -->
+        <section id="resume" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-number">04.</span>
+                    <h2 class="section-title">Resume</h2>
+                </div>
+                <div class="resume-content">
+                    <div class="resume-text">
+                        <p>
+                            Want to know more about my background, skills, and experience?
+                            Download my resume to get the full picture of my professional journey.
+                        </p>
+                        <a href="#" class="btn btn-primary resume-download" id="downloadResume">
+                            <i class="fas fa-download"></i>
+                            Download Resume PDF
+                        </a>
+
+                        <!-- PDF Viewer -->
+                        <div class="pdf-viewer-container">
+                            <h3>Resume Preview</h3>
+                            <div class="pdf-viewer">
+                                <iframe
+                                    src="resume/AkramNaeemuddin_Resume.pdf"
+                                    width="100%"
+                                    height="600"
+                                    type="application/pdf">
+                                    <p>Your browser does not support PDFs.
+                                       <a href="resume/AkramNaeemuddin_Resume.pdf" target="_blank">Download the PDF</a>.
+                                    </p>
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Certifications -->
+                    <div class="certifications">
+                        <h3>Certifications</h3>
+                        <div class="cert-list">
+                            <div class="cert-item">
+                                <h4>IBM Data Science Professional Certificate</h4>
+                                <p>IBM via Coursera • 2024</p>
+                            </div>
+                            <div class="cert-item">
+                                <h4>Altair Data Science Master Certificate</h4>
+                                <p>Altair Engineering • 2024</p>
+                            </div>
+                            <div class="cert-item">
+                                <h4>Machine Learning Course</h4>
+                                <p>Coursera - Andrew NG • 2023</p>
+                            </div>
+                            <div class="cert-item">
+                                <h4>Cloud Computing & Distributed Systems</h4>
+                                <p>NPTEL - IIT Kharagpur • 2023</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-number">05.</span>
+                    <h2 class="section-title">Get In Touch</h2>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-text">
+                        <p>
+                            I'm always interested in new opportunities and exciting projects.
+                            Whether you have a question, want to collaborate, or just want to say hi,
+                            I'd love to hear from you!
+                        </p>
+                    </div>
+
+                    <div class="contact-form-container">
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="contact-links">
+                        <a href="mailto:akramnaeemuddin09@gmail.com" class="contact-link">
+                            <i class="fas fa-envelope"></i>
+                            akramnaeemuddin09@gmail.com
+                        </a>
+                        <a href="https://www.linkedin.com/in/akramnaeemuddin/" target="_blank" class="contact-link">
+                            <i class="fab fa-linkedin"></i>
+                            LinkedIn
+                        </a>
+                        <a href="https://github.com/akramnameemuddin" target="_blank" class="contact-link">
+                            <i class="fab fa-github"></i>
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Akram Naeemuddin</p>
+                <div class="footer-links">
+                    <a href="https://github.com/akramnameemuddin" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
                     </a>
-                    <a href="#contact" class="btn btn-secondary">
-                        <span>Get In Touch</span>
+                    <a href="https://www.linkedin.com/in/akramnaeemuddin/" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:akramnaeemuddin09@gmail.com" aria-label="Email">
                         <i class="fas fa-envelope"></i>
                     </a>
                 </div>
             </div>
-            <div class="hero-visual">
-                <div class="floating-elements">
-                    <div class="floating-card">
-                        <i class="fab fa-python"></i>
-                    </div>
-                    <div class="floating-card">
-                        <i class="fab fa-react"></i>
-                    </div>
-                    <div class="floating-card">
-                        <i class="fab fa-js-square"></i>
-                    </div>
-                    <div class="floating-card">
-                        <i class="fas fa-database"></i>
-                    </div>
-                    <div class="floating-card">
-                        <i class="fab fa-git-alt"></i>
-                    </div>
-                    <div class="floating-card">
-                        <i class="fas fa-chart-bar"></i>
-                    </div>
-                    <div class="floating-card">
-                        <i class="fab fa-aws"></i>
-                    </div>
-                    <div class="floating-card">
-                        <i class="fas fa-robot"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="scroll-indicator">
-            <div class="scroll-arrow"></div>
-        </div>
-    </section>
-
-    <!-- Stacking Cards Container -->
-    <div class="cards-container">
-        
-        <!-- About Me Card -->
-        <section id="about" class="card-section" data-card="1">
-            <div class="card-content">
-                <div class="section-header">
-                    <h2 class="section-title">About Me</h2>
-                    <div class="section-line"></div>
-                </div>
-                <div class="about-content">
-                    <div class="profile-section">
-                        <div class="profile-image">
-                            <img src="./images/1727023493260.jpg" alt="Akram Naeemuddin" loading="eager" />
-                            <div class="profile-ring"></div>
-                        </div>
-                    </div>
-                    <div class="about-text">
-                        <p class="about-intro">
-                            <span class="intro-highlight">HI!</span> I'm Akram Naeemuddin, a data-driven full-stack developer with hands-on experience in building intelligent web applications and scalable backend systems. With a background in data analysis, cloud migration (AWS Redshift), and machine learning, I specialize in developing modern solutions using React, Django, and Python. I'm passionate about bridging data and development to create impactful, user-centric platforms.
-                        </p>
-                        <div class="personality-traits">
-                            <div class="trait animate-child">
-                                <i class="fas fa-lightbulb"></i>
-                                <span>Creative Problem Solver</span>
-                            </div>
-                            <div class="trait animate-child">
-                                <i class="fas fa-users"></i>
-                                <span>Team Collaborator</span>
-                            </div>
-                            <div class="trait animate-child">
-                                <i class="fas fa-rocket"></i>
-                                <span>Innovation Enthusiast</span>
-                            </div>
-                            <div class="trait animate-child">
-                                <i class="fas fa-code"></i>
-                                <span>Clean Code Advocate</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Skills Card -->
-        <section id="skills" class="card-section" data-card="2">
-            <div class="card-content">
-                <div class="section-header">
-                    <h2 class="section-title">Skills & Technologies</h2>
-                    <div class="section-line"></div>
-                </div>
-                <div class="skills-grid">
-                    <div class="skill-category">
-                        <h3><i class="fas fa-code"></i> Languages & Frameworks</h3>
-                        <div class="skills-row">
-                            <div class="skill-item animate-child">
-                                <i class="fab fa-python"></i>
-                                <span>Python</span>
-                                <div class="skill-level" data-level="95"></div>
-                            </div>
-                            <div class="skill-item animate-child">
-                                <i class="fas fa-database"></i>
-                                <span>SQL</span>
-                                <div class="skill-level" data-level="90"></div>
-                            </div>
-                            <div class="skill-item animate-child">
-                                <i class="fab fa-python"></i>
-                                <span>Django</span>
-                                <div class="skill-level" data-level="85"></div>
-                            </div>
-                            <div class="skill-item animate-child">
-                                <i class="fab fa-js-square"></i>
-                                <span>JavaScript</span>
-                                <div class="skill-level" data-level="80"></div>
-                            </div>
-                            <div class="skill-item animate-child">
-                                <i class="fab fa-react"></i>
-                                <span>ReactJS</span>
-                                <div class="skill-level" data-level="85"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill-category">
-                        <h3><i class="fas fa-tools"></i> Software & Tools</h3>
-                        <div class="skills-row">
-                            <div class="skill-item animate-child">
-                                <i class="fab fa-git-alt"></i>
-                                <span>Git</span>
-                                <div class="skill-level" data-level="90"></div>
-                            </div>
-                            <div class="skill-item animate-child">
-                                <i class="fas fa-chart-bar"></i>
-                                <span>Power BI</span>
-                                <div class="skill-level" data-level="85"></div>
-                            </div>
-                            <div class="skill-item animate-child">
-                                <i class="fas fa-chart-line"></i>
-                                <span>Tableau</span>
-                                <div class="skill-level" data-level="80"></div>
-                            </div>
-                            <div class="skill-item animate-child">
-                                <i class="fas fa-file-excel"></i>
-                                <span>Excel (Advanced, VBA)</span>
-                                <div class="skill-level" data-level="95"></div>
-                            </div>
-                            <div class="skill-item animate-child">
-                                <i class="fab fa-aws"></i>
-                                <span>AWS (Redshift)</span>
-                                <div class="skill-level" data-level="75"></div>
-                            </div>
-                            <div class="skill-item animate-child">
-                                <i class="fas fa-analytics"></i>
-                                <span>Google Analytics</span>
-                                <div class="skill-level" data-level="80"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill-category">
-                        <h3><i class="fas fa-brain"></i> Data & Other Skills</h3>
-                        <div class="skills-row">
-                            <div class="skill-item animate-child">
-                                <i class="fas fa-robot"></i>
-                                <span>Machine Learning</span>
-                                <div class="skill-level" data-level="85"></div>
-                            </div>
-                            <div class="skill-item animate-child">
-                                <i class="fas fa-exchange-alt"></i>
-                                <span>REST APIs</span>
-                                <div class="skill-level" data-level="90"></div>
-                            </div>
-                            <div class="skill-item animate-child">
-                                <i class="fas fa-chart-pie"></i>
-                                <span>Data Science</span>
-                                <div class="skill-level" data-level="80"></div>
-                            </div>
-                            <div class="skill-item animate-child">
-                                <i class="fas fa-cogs"></i>
-                                <span>CI/CD Pipelines</span>
-                                <div class="skill-level" data-level="75"></div>
-                            </div>
-                            <div class="skill-item animate-child">
-                                <i class="fas fa-chart-area"></i>
-                                <span>Data Visualization</span>
-                                <div class="skill-level" data-level="85"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Projects Card -->
-        <section id="projects" class="card-section" data-card="3">
-            <div class="card-content">
-                <div class="section-header">
-                    <h2 class="section-title">Featured Projects</h2>
-                    <div class="section-line"></div>
-                </div>
-                <div class="projects-slider">
-                    <div class="project-card animate-child">
-                        <div class="project-image">
-                            <img src="images/project1.png" alt="Smart Competency Platform" />
-                            <div class="project-overlay">
-                                <div class="project-links">
-                                    <a href="https://github.com/akramnameemuddin/job-elevate" class="project-link" target="_blank">
-                                        <i class="fab fa-github"></i>
-                                    </a>
-                                    <a href="https://jobelevates.akramnaeemuddin.me/" class="project-link" target="_blank">
-                                        <i class="fas fa-external-link-alt"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-info">
-                            <h3>Smart Competency Platform</h3>
-                            <p><strong>Role:</strong> Full-Stack Developer & Data Engineer</p>
-                            <p><strong>Timeline:</strong> Sept 2024 – Mar 2025</p>
-                            <p><strong>Tech Stack:</strong> Python, Django, ReactJS, PostgreSQL, AWS, Machine Learning</p>
-                            <div class="project-description">
-                                <p><strong>🔍 Overview:</strong> An AI-powered employment platform designed to bridge the gap between candidates' skills and job market demands through personalized job matching and adaptive learning.</p>
-                                <p><strong>🚀 Key Features:</strong></p>
-                                <ul>
-                                    <li>Competency Diagnosis Engine: Built a dynamic ML-based assessment system</li>
-                                    <li>AI-Powered Job Matching: Developed recommendation engine with real-time market insights</li>
-                                    <li>Adaptive Learning Paths: Integrated micro-course and certification recommendations</li>
-                                    <li>Resume Automation & Skills Verification: Created auto-generation and verification modules</li>
-                                    <li>Scalable APIs: Developed REST APIs for high-performance data processing</li>
-                                </ul>
-                            </div>
-                            <div class="project-tech">
-                                <span>Python</span>
-                                <span>Django</span>
-                                <span>ReactJS</span>
-                                <span>PostgreSQL</span>
-                                <span>AWS</span>
-                                <span>Machine Learning</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Experience Card -->
-        <section id="experience" class="card-section" data-card="4">
-            <div class="card-content">
-                <div class="section-header">
-                    <h2 class="section-title">Professional Experience</h2>
-                    <div class="section-line"></div>
-                </div>
-                <div class="timeline">
-                    <div class="timeline-item animate-child">
-                        <div class="timeline-icon">
-                            <i class="fas fa-chart-line"></i>
-                        </div>
-                        <div class="timeline-content">
-                            <div class="timeline-date">August 2022 – January 2023</div>
-                            <h3>Data Quality Intern</h3>
-                            <h4>Saras Analytics, Hyderabad</h4>
-                            <p><strong>Role:</strong> Data Analyst & Automation Intern</p>
-                            <div class="experience-details">
-                                <p><strong>💡 Responsibilities & Achievements:</strong></p>
-                                <ul>
-                                    <li>Built and optimized custom SQL queries to generate actionable reports for leading e-commerce and apparel brands</li>
-                                    <li>Analyzed Google Analytics data to create tailored dashboards supporting marketing strategies</li>
-                                    <li>Delivered data-driven growth insights that contributed to measurable revenue gains for high-growth clients</li>
-                                    <li>Automated repetitive workflows using Excel macros and VBA scripts, achieving a 30% reduction in manual workload</li>
-                                    <li>Improved data processing accuracy and speed, helping teams make faster and more confident decisions</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Certifications Card -->
-        <section id="certifications" class="card-section" data-card="5">
-            <div class="card-content">
-                <div class="section-header">
-                    <h2 class="section-title">Certifications & Achievements</h2>
-                    <div class="section-line"></div>
-                </div>
-                <div class="certifications-grid">
-                    <div class="certification-badge animate-child">
-                        <div class="cert-icon">
-                            <img src="https://img.icons8.com/color/100/000000/ibm.png" alt="IBM" />
-                        </div>
-                        <div class="cert-info">
-                            <h3>IBM Data Science Professional Certificate</h3>
-                            <p>IBM via Coursera</p>
-                            <span class="cert-date">2024</span>
-                        </div>
-                    </div>
-                    <div class="certification-badge animate-child">
-                        <div class="cert-icon">
-                            <img src="https://img.icons8.com/color/100/000000/data-science.png" alt="Altair" />
-                        </div>
-                        <div class="cert-info">
-                            <h3>Altair Data Science Master Certificate</h3>
-                            <p>Altair Engineering</p>
-                            <span class="cert-date">2024</span>
-                        </div>
-                    </div>
-                    <div class="certification-badge animate-child">
-                        <div class="cert-icon">
-                            <img src="https://img.icons8.com/color/100/000000/machine-learning.png" alt="Coursera ML" />
-                        </div>
-                        <div class="cert-info">
-                            <h3>Machine Learning Course</h3>
-                            <p>Coursera - Andrew NG</p>
-                            <span class="cert-date">2023</span>
-                        </div>
-                    </div>
-                    <div class="certification-badge animate-child">
-                        <div class="cert-icon">
-                            <img src="https://img.icons8.com/color/100/000000/cloud-computing.png" alt="NPTEL" />
-                        </div>
-                        <div class="cert-info">
-                            <h3>Cloud Computing & Distributed Systems</h3>
-                            <p>NPTEL - IIT Kharagpur</p>
-                            <span class="cert-date">2023</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Card -->
-        <section id="contact" class="card-section" data-card="6">
-            <div class="card-content">
-                <div class="section-header">
-                    <h2 class="section-title">Let's Work Together</h2>
-                    <div class="section-line"></div>
-                </div>
-                <div class="contact-content">
-                    <div class="contact-info">
-                        <h3>Get In Touch</h3>
-                        <p>I'm always excited to take on new projects and collaborate with amazing people. Whether you have a project in mind or just want to chat about technology, feel free to reach out!</p>
-                        
-                        <div class="contact-items">
-                            <a href="mailto:akramnaeemuddin09@gmail.com" class="contact-item animate-child">
-                                <i class="fas fa-envelope"></i>
-                                <span>akramnaeemuddin09@gmail.com</span>
-                            </a>
-                            <a href="https://www.linkedin.com/in/akramnaeemuddin/" target="_blank" class="contact-item animate-child">
-                                <i class="fab fa-linkedin"></i>
-                                <span>Connect on LinkedIn</span>
-                            </a>
-                            <a href="https://github.com/akramnameemuddin" target="_blank" class="contact-item animate-child">
-                                <i class="fab fa-github"></i>
-                                <span>Check out my GitHub</span>
-                            </a>
-                            <div class="contact-item animate-child">
-                                <i class="fas fa-clock"></i>
-                                <span>Available for opportunities</span>
-                            </div>
-                        </div>
-                        
-                        <div class="social-links">
-                            <a href="https://github.com/akramnameemuddin" target="_blank" class="social-link animate-child">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="https://www.linkedin.com/in/akramnaeemuddin/" target="_blank" class="social-link animate-child">
-                                <i class="fab fa-linkedin"></i>
-                            </a>
-                            <a href="mailto:akramnaeemuddin09@gmail.com" class="social-link animate-child">
-                                <i class="fas fa-envelope"></i>
-                            </a>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-message">
-                        <p>Ready to bring your ideas to life? Let's connect and create something amazing together!</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-    </div>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-content">
-            <p>&copy; 2025 Akram Naeemuddin. All rights reserved.</p>
         </div>
     </footer>
 
